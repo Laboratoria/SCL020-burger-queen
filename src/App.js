@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+//import logo from './logo.svg';
+//import './App.css';
+import Home from './vistas/Home.js';
+import Waiter from './vistas/Waiter.js';
+import Kitchen from './vistas/Kitchen.js';
+import * as React from "react";
+import { Route,Routes } from "react-router-dom";
 
+
+//COMPONENTE FUNCIONAL
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+<Routes>
+        <Route path="" element={<Home/>}></Route>
+        <Route path="/waiter" element={<Waiter/>}></Route>
+        <Route path="/kitchen" element={<Kitchen/>}></Route>
+      
+</Routes>
 
+ )
+}
 export default App;
+
+/*<BrowserRouter>
+<Routes>
+<Route path='/' element={<Home />} />
+      <Route path='/Menu' element={ <Waiter />} />
+      <Route path='/Cook' element={ <Kitchen />} />
+</Routes>
+</BrowserRouter>*/
