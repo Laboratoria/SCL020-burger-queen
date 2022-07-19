@@ -3,16 +3,16 @@ import HeaderW from '../components/HeaderW.js'
 import {BrowserRouter} from "react-router-dom";
 import MenuButtons from '../components/MenuButtons.js';
 import OrderBox from '../components/OrderBox.js';
-import Buttons from '../components/Buttons.js';
+import ShowMenuButton from '../components/MenuButtons.js';
 
 function Waiter () {
     return (
         <>
         <HeaderW/>
-        <div className='menuOptions'></div>
-        <MenuButtons/>
+        <ShowMenuButton/>
         <OrderBox/>
         <button className='sendToKitchen'>Enviar a cocina</button>
+        
         </>
     )
 }
