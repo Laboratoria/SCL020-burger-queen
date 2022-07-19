@@ -1,18 +1,16 @@
 import React from 'react';
-import Buttons from '../components/Buttons.js';
 //import { Link } from 'react-router-dom';
 
 function HeaderW () {
 return(
-    <header>
+    <header className="waiterHeader">
         <h1>Mesa</h1>
-        <Buttons name= "1"/>
-        <Buttons name= "2"/>
-        <Buttons name= "3"/>
-        <Buttons name= "4"/>
-        <Buttons name= "5"/>
-        <Buttons name= "Check"/>
-
+        <button className= "table1">1</button>
+        <button className= "table2">2</button>
+        <button className= "table3">3</button>
+        <button className= "table4">4</button>
+        <button className= "table5">5</button>
+        <button className= "check">check</button>
     </header>
 )
 
