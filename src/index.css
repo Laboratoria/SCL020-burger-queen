@@ -16,16 +16,22 @@ body {
   justify-content: space-around;
 }
 .ContainerButtons{
-
+  margin-right: 257px;
   margin-top: 330px;
-  margin-right: 150px;
+  margin-left: 0px;
+  margin-bottom: 100px;
+  padding-right: 100px;
   }
 
 .imgHome{
   align-content: center;
-  margin-top: 130px;
-  margin-left: 55px;
-  padding-left: 145px;
+  width: 400px;
+  height: 400px;
+  margin-top: 167px;
+  margin-left: 159px;
+ margin-right:0px;
+ padding-left: 315px;
+ position: relative;
 }
 .btnHome{
   background-color: #edf5d9;
@@ -33,7 +39,6 @@ body {
   height: 50px;
   border-radius: 20px;
   font-size: large;
-
 }
 
 #root{
@@ -98,17 +103,21 @@ h1{
   margin-bottom: 1%;
 }
 .menuOptions{
-  width: 90%;
+  width: 60%;
   height: 25%;
   background-color: white;
-  margin-left: 5%;
+  margin-left: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5%;
 }
 .orderBox{
   width: 53%;
   height: 40%;
   background-color: white;
   margin-left: 27%;
-  margin-top: -15%;
+  margin-top: -30%;
 }
 .sendToKitchen{
   background-color: #5BF157;
@@ -117,48 +126,42 @@ h1{
   border: none;
   width: 15%;
   margin-left: 83%;
-  margin-top: -50%;
+  margin-top: -80%;
 }
 .menuButtons{
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 30%;
+  height: 45%;
+  margin-top: 0.9%;
 }
-.tableb{
+.menuButton{
 background-color: #FFEB84;
-width: 99%;
-height: 3%;
+width: 80%;
+height: 30%;
 border: none;
-font-size: 30px;
+font-size: 25px;
 border-radius: 0 10px 10px 0;
-margin-top: 1%;
-margin-bottom: 1%;
+margin-top: 8%;
 }
-.tablevb{
-background-color: #FFEB84;
-width: 99%;
-height: 3%;
-border: none;
-font-size: 30px;
-border-radius: 0 10px 10px 0;
-margin-bottom: 1%;
+.titlesHeader{
+  background-color: rgb(32, 8, 8);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  height: 10%;
+  align-items: center;
 }
-.drinksb{
-background-color: #FFEB84;
-width: 99%;
-height: 3%;
-border: none;
-font-size: 30px;
-border-radius: 0 10px 10px 0;
-margin-bottom: 1%;
+.pKitchen{
+  margin-left: 3%;
 }
-.desserts{
-background-color: #FFEB84;
-width: 99%;
-height: 3%;
+.dessertButton{
+  background-color: #FFEB84;
+width: 30%;
+height: 30%;
 border: none;
-font-size: 30px;
-border-radius: 0 10px 10px 0;
-margin-bottom: 1%;
+font-size: 20px;
+border-radius: 10px;
+margin: 2%;
 }
 
