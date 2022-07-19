@@ -16,16 +16,21 @@ body {
   justify-content: space-around;
 }
 .ContainerButtons{
-
+  margin-right: 240px;
   margin-top: 330px;
-  margin-right: 150px;
+  margin-left: 0px;
+  padding-right: 100px;
   }
 
 .imgHome{
   align-content: center;
+  width: 400px;
+  height: 400px;
   margin-top: 130px;
-  margin-left: 55px;
-  padding-left: 145px;
+  margin-left: 300px;
+ margin-right:0px;
+ padding-left: 315px;
+  
 }
 .btnHome{
   background-color: #edf5d9;
