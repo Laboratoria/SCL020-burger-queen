@@ -6,6 +6,36 @@ body {
   width: 100vw;
   height: 100vh;
 }
+.BodyHome{
+  background-image:url("../public/imagenes/fondo-definitivo-1er-template.jpg") ;
+  background-size: cover;
+  height: 100vh;
+}
+.ContainerHome{
+  display: flex;
+  justify-content: space-around;
+}
+.ContainerButtons{
+
+  margin-top: 330px;
+  margin-right: 150px;
+  }
+
+.imgHome{
+  align-content: center;
+  margin-top: 130px;
+  margin-left: 55px;
+  padding-left: 145px;
+}
+.btnHome{
+  background-color: #edf5d9;
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  font-size: large;
+
+}
+
 #root{
   width: 100vw;
   height: 100vh;
