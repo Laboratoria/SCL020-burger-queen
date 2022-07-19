@@ -1,11 +1,10 @@
 import React from 'react';
 
-function Buttons({name}) {
+function Buttons(props) {
     return (
-        <div>
-             <button  type={ name==='Crear Pedido'? 'submit' : 'button'}>{name}</button>
+       
+             <button {...props.className} >{props.name}</button>
              
-        </div>
     );
 }
 
