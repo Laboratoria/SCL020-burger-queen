@@ -1,14 +1,134 @@
 body {
-  background-image:url("../public/imagenes/fondo-definitivo-1er-template.jpg") ;
-  /*margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;*/
+  background-image:url("../public/imagenes/fondoPrueba.png") ;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+}
+#root{
+  width: 100vw;
+  height: 100vh;
+}
+h1{
+  margin: 0;
+}
+.waiterHeader{
+  background-color: rgb(32, 8, 8);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  height: 10%;
+  justify-content: space-around;
+  align-items: center;
+}
+.table1{
+  background-color: #FFEB84;
+  width: 12%;
+  border: none;
+  font-size: 30px;
+  border-radius: 10px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.table2{
+  background-color: #FFEB84;
+  width: 12%;
+  border: none;
+  font-size: 30px;
+  border-radius: 10px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.table3{
+  background-color: #FFEB84;
+  width: 12%;
+  border: none;
+  font-size: 30px;
+  border-radius: 10px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.table4{
+  background-color: #FFEB84;
+  width: 12%;
+  border: none;
+  font-size: 30px;
+  border-radius: 10px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.table5{
+  background-color: #FFEB84;
+  width: 12%;
+  border: none;
+  font-size: 30px;
+  border-radius: 10px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.menuOptions{
+  width: 90%;
+  height: 25%;
+  background-color: white;
+  margin-left: 5%;
+}
+.orderBox{
+  width: 53%;
+  height: 40%;
+  background-color: white;
+  margin-left: 27%;
+  margin-top: -15%;
+}
+.sendToKitchen{
+  background-color: #5BF157;
+  font-size: 25px;
+  border-radius: 10px;
+  border: none;
+  width: 15%;
+  margin-left: 83%;
+  margin-top: -50%;
+}
+.menuButtons{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+.tableb{
+background-color: #FFEB84;
+width: 99%;
+height: 3%;
+border: none;
+font-size: 30px;
+border-radius: 0 10px 10px 0;
+margin-top: 1%;
+margin-bottom: 1%;
+}
+.tablevb{
+background-color: #FFEB84;
+width: 99%;
+height: 3%;
+border: none;
+font-size: 30px;
+border-radius: 0 10px 10px 0;
+margin-bottom: 1%;
+}
+.drinksb{
+background-color: #FFEB84;
+width: 99%;
+height: 3%;
+border: none;
+font-size: 30px;
+border-radius: 0 10px 10px 0;
+margin-bottom: 1%;
+}
+.desserts{
+background-color: #FFEB84;
+width: 99%;
+height: 3%;
+border: none;
+font-size: 30px;
+border-radius: 0 10px 10px 0;
+margin-bottom: 1%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
