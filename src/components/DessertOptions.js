@@ -1,14 +1,17 @@
 import React from 'react';
+import { DataDesserts } from '../data/DataDesserts';
 
 function DessertOptions () {
 return(
   
-    <div className='dessertOptionContainer'>
-        <button className= "dessertButton">Helado Frito</button>
-        <button className= "dessertButton">Leche Asada</button>
-        <button className= "dessertButton">Helado Frito SL</button>
-        <button className= "dessertButton">Mix de Frutas</button>
-    </div>
+    <>
+    {DataDesserts.map((product, i) => (
+            <div className='buttonOptions' key={i}>
+                <button onClick={() => console.log(product)} className="dessertButton">{product.name}</button>
+            </div>
+        ))
+    }
+    </>
    
 )
 
