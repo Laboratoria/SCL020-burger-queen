@@ -1,9 +1,13 @@
 import React from "react"
 import {BrowserRouter} from "react-router-dom";
+import TitlesHeader from "../components/TitlesHeader";
 
 function Kitchen() {
     return(
-<div>Cocina</div>
+        <>
+<TitlesHeader title = 'Cocina'/>
+<div className = 'kitchenCardsArea'></div>
+</>
     )
 }
 
