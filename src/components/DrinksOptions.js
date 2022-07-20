@@ -1,18 +1,19 @@
 import React from 'react';
+import { DataDrinks } from '../data/DataDrinks';
 
-function DrinksOptions () {
-return(
-  
-    <div className='dessertOptionContainer'>
-        <button className="drinkButton">Fanta 330ml</button>
-        <button className= "drinkButton">Coca Cola 330ml</button>
-        <button className= "drinkButton">Agua Natural</button>
-        <button className= "drinkButton">Agua C/G</button>
-        <button className= "drinkButton">Jugo de Fresa</button>
-        <button className= "drinkButton">Jugo de Piña</button>
-    </div>
-   
-)
+
+const DrinksOptions = () => {
+    return (
+        <div className='menuOptions'>
+        {DataDrinks.map((product, i) => (
+                <div className='buttonOptions' key={i}>
+                    <button onClick={() => console.log(product)} className="drinkButton">{product.name}</button>
+                </div>
+            ))
+        }
+        </div>
+
+    )
 
 }
 

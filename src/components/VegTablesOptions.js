@@ -1,13 +1,16 @@
 import React from 'react';
+import { DataTableVg } from '../data/DataTableVg';
 
 function VegTablesOptions () {
 return(
-  
-    <div className='vegTablesOptionContainer'>
-        <button className="vegTableButton">Ai</button>
-        <button className= "vegTableButton">Heiwa</button>
-        <button className= "vegTableButton">Kazoku</button>
-    </div>
+    <>
+    {DataTableVg.map((product, i) => (
+            <div className='buttonOptions' key={i}>
+                <button onClick={() => console.log(product)} className="vegTableButton">{product.name}</button>
+            </div>
+        ))
+    }
+    </>
    
 )
 
