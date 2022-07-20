@@ -1,15 +1,17 @@
 import React from 'react';
-import Hola from './Hola';
+import { DataTable } from '../data/DataTable';
 
 function TablesOptions () {
 return(
   
-    <div className='tablesOptionContainer'>
-        <button className="tableButton" onClick={<Hola/>}>Tadakimasu</button>
-        <button className= "tableButton">Okaeri</button>
-        <button className= "tableButton">Ue</button>
-    </div>
-   
+    <>
+    {DataTable.map((product, i) => (
+            <div className='buttonOptions' key={i}>
+                <button onClick={() => console.log(product)} className="drinkButton">{product.name}</button>
+            </div>
+        ))
+    }
+    </>
 )
 
 }
