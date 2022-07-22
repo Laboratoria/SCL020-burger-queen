@@ -1,3 +1,7 @@
+*{
+  margin:0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
 body {
   background-image:url("../public/imagenes/fondoPrueba.png") ;
   margin: 0;
@@ -10,6 +14,7 @@ body {
   background-image:url("../public/imagenes/fondo-definitivo-1er-template.jpg") ;
   background-size: cover;
   height: 100vh;
+  width: 100vw;
 }
 .ContainerHome{
   display: flex;
@@ -25,9 +30,10 @@ body {
 
 .imgHome{
   align-content: center;
-  width: 400px;
-  height: 400px;
-  margin-top: 167px;
+  justify-content: center;
+  width: 350px;
+    height: 350px;
+    margin-top: 85px;
   margin-left: 159px;
  margin-right:0px;
  padding-left: 315px;
@@ -37,8 +43,10 @@ body {
   background-color: #edf5d9;
   width: 200px;
   height: 50px;
-  border-radius: 20px;
+  border-radius: 10px;
+  border:none;
   font-size: large;
+  margin-bottom: 10%;
 }
 
 #root{
@@ -57,50 +65,27 @@ h1{
   justify-content: space-around;
   align-items: center;
 }
-.table1{
+.tables{
   background-color: #FFEB84;
   width: 12%;
   border: none;
-  font-size: 30px;
+  font-size: 25px;
   border-radius: 10px;
   margin-top: 1%;
   margin-bottom: 1%;
 }
-.table2{
+.check{
   background-color: #FFEB84;
-  width: 12%;
+  width: 100%;
   border: none;
-  font-size: 30px;
+  font-size: 23px;
   border-radius: 10px;
   margin-top: 1%;
   margin-bottom: 1%;
 }
-.table3{
-  background-color: #FFEB84;
-  width: 12%;
-  border: none;
-  font-size: 30px;
-  border-radius: 10px;
-  margin-top: 1%;
-  margin-bottom: 1%;
-}
-.table4{
-  background-color: #FFEB84;
-  width: 12%;
-  border: none;
-  font-size: 30px;
-  border-radius: 10px;
-  margin-top: 1%;
-  margin-bottom: 1%;
-}
-.table5{
-  background-color: #FFEB84;
-  width: 12%;
-  border: none;
-  font-size: 30px;
-  border-radius: 10px;
-  margin-top: 1%;
-  margin-bottom: 1%;
+.tables:hover{
+  background-color: white;
+  height: 80%;
 }
 .menuOptions{
   width: 80%;
@@ -114,19 +99,20 @@ h1{
 }
 .orderBox{
   width: 53%;
-  height: 40%;
+  height: 50%;
   background-color: white;
   margin-left: 27%;
   margin-top: -30%;
 }
 .sendToKitchen{
   background-color: #5BF157;
-  font-size: 25px;
+  font-size: 20px;
   border-radius: 10px;
   border: none;
   width: 15%;
-  margin-left: 83%;
-  margin-top: -80%;
+  position: relative;
+  top: -30%;
+  left: 83%;
 }
 .menuButtons{
   display: flex;
@@ -140,27 +126,17 @@ background-color: #FFEB84;
 width: 80%;
 height: 30%;
 border: none;
-font-size: 25px;
+font-size: 23px;
 border-radius: 0 10px 10px 0;
 margin-top: 8%;
-}
-.titlesHeader{
-  background-color: rgb(32, 8, 8);
-  color: white;
-  display: flex;
-  flex-direction: row;
-  height: 10%;
-  align-items: center;
-}
-.pKitchen{
-  margin-left: 3%;
+
 }
 .dessertButton{
   background-color: #FFEB84;
 width: 100%;
 height: 100%;
 border: none;
-font-size: 20px;
+font-size: 18px;
 border-radius: 10px;
 margin: 2%;
 }
@@ -188,13 +164,15 @@ margin: 2%;
   width: 100%;
   height: 100%;
   border: none;
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 10px;
   margin: 2%;
 }
 .buttonOptions{
   width: 140px;
-  height: 45px;
+  height: 47px;
   margin: 10px;
 }
-
+button:hover{
+  background-color: #ff914d;
+}
