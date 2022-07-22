@@ -3,10 +3,12 @@ function Login() {
     return (
       <>
         <main>
-           <button>Continuar</button>
+           <input  placeholder="E-mail"></input>
+           <input  placeholder="contraseña"></input>
+           <input  placeholder="Nombre"></input>
         </main>
         <nav>
-          <Link to="/menu">Ingresar al menú</Link>
+          <Link to="/menu">Ingresar</Link>
         </nav>
       </>
     );

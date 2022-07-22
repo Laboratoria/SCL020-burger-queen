@@ -3,10 +3,12 @@ function Welcome() {
     return (
       <>
         <main>
-           <button>Continuar</button>
+            <h1 className="text-3xl font-bold underline">Burger Queen </h1>
+            <p>Food ordering App</p>
+           
         </main>
         <nav>
-          <Link to="/login">Bienvenido</Link>
+          <Link to="/login">Continuar</Link>
         </nav>
       </>
     );
