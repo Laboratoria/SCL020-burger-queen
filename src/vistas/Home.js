@@ -12,13 +12,13 @@ function Home() {
     return (
         <div className="BodyHome">
             <div className='ContainerHome'>
-                <img className='imgHome' src="../imagenes/logo-Shonagai.png"></img>
+                <img className='imgHome' alt="logo-home" src="../imagenes/logo-Shonagai.png"></img>
                 <div className='ContainerButtons'>
                     <Link to="/waiter">
-                        <Buttons className='btn-waiter' name="Garzón" />
+                        <Buttons className='btn-waiter' name="GARZÓN" />
                     </Link>
                     <Link to="/kitchen">
-                        <Buttons className='btn-Kitchen' name="Cocina" />
+                        <Buttons className='btn-Kitchen' name="COCINA" />
                     </Link>
                 </div>
             </div>
