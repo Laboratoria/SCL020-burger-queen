@@ -12,8 +12,8 @@ function Waiter () {
         <ShowMenuButton/>
         <OrderBox/>
         <button className='sendToKitchen'>Enviar a cocina</button>
-        
         </>
+
     )
 }
 export default Waiter
