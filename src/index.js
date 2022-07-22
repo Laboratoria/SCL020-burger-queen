@@ -9,9 +9,11 @@ import App from './App';
 //ReactDOM.render(<div>Hola Mundo</div>, document.getElementById('root'));
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  
   <BrowserRouter>
   <App/>
   </BrowserRouter>
+  
   /*<React.StrictMode>
     <App />
   </React.StrictMode>*/
