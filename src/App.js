@@ -12,14 +12,16 @@ import { OrderProvider } from './context/OrderContext.js';
 //COMPONENTE FUNCIONAL
 function App() {
   return (
+    <OrderProvider>
 <Routes>
-  <OrderProvider>
+ 
         <Route path="" element={<Home/>}></Route>
         <Route path="/waiter" element={<Waiter/>}></Route>
         <Route path="/kitchen" element={<Kitchen/>}></Route>
         <Route path="/tablesState" element={<TablesState/>}></Route>
-        </OrderProvider>
+   
 </Routes>
+</OrderProvider>
  )
 }
 export default App;

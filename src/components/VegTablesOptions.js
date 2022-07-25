@@ -16,4 +16,4 @@ return(
 
 }
 
-export default VegTablesOptions;
+export default VegTablesOptions
