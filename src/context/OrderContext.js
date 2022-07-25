@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from "React";
+import { createContext, useEffect, useState } from "react";
 
 const OrderContext = createContext();
 
@@ -13,7 +13,7 @@ export const OrderProvider = ({ children }) => {
     });
 
     useEffect(() => {
-        localStorage.setItem('orderProducts'.JSON.stringify(orderItems));
+        localStorage.setItem('orderProducts', JSON.stringify(orderItems));
     }, [orderItems]);
 
     const addItemToOrder = (product) => {
