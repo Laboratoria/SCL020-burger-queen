@@ -1,6 +1,8 @@
-function MenuItem({ name }) {
+
+function MenuItem({ name, creatingOrder }) {
+    
     return (
-        <button onClick = {console.log('OK')} className="buttonOptions">{name}</button>
+        <button onClick= {() => creatingOrder(name)} className="buttonOptions">{name}</button>
     );
   }
   
