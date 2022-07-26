@@ -1,15 +1,17 @@
 import { useState } from "react";
 import MenuItem from "./MenuItem";
 
-function MenuList({ MenuData }) {
+function MenuList({ MenuData, creatingOrder }) {
     // console.log(props);
     const [selectedDish, setSelectedDish] = useState("tablas");
   
     const onSelectedDish = (e) => {
       setSelectedDish(e.target.dataset.id);
     };
+    
   
     return (
+        <>
       <div className="container-menu">
         <div className="menuButtons">
           <button className="tableButton" data-id="tablas" onClick={onSelectedDish}>
@@ -26,16 +28,22 @@ function MenuList({ MenuData }) {
           </button>
         </div>
         <div>
+            
           {MenuData[selectedDish].map((element) => {
             return (
+            
               <MenuItem
-                key={`${element.name}${element.key}`}
+                key={`${element.name}`}
                 name={element.name}
+                creatingOrder={creatingOrder}
+                
               />
             );
           })}
         </div>
       </div>
+      
+      </>
     );
   }
   export default MenuList;
