@@ -35,6 +35,8 @@ function MenuList({ MenuData, creatingOrder }) {
               <MenuItem
                 key={`${element.name}`}
                 name={element.name}
+                price={element.price}
+                id={element.id}
                 creatingOrder={creatingOrder}
                 
               />

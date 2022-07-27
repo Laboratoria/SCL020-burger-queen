@@ -1,8 +1,8 @@
 
-function MenuItem({ name, creatingOrder }) {
+function MenuItem({ name, creatingOrder, price, id }) {
     
     return (
-        <button onClick= {() => creatingOrder(name)} className="buttonOptions">{name}</button>
+        <button onClick= {() => creatingOrder(name, price, id)} className="buttonOptions">{name}</button>
     );
   }
   

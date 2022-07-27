@@ -7,11 +7,13 @@ import { useState } from "react";
 
 function Waiter () {
     const [orderProducts, setOrderProducts] = useState([])
-    const creatingOrder = (name) => {
-        const array = [...orderProducts, name]
+
+    const creatingOrder = (name, price, id) => {
+        const array = [...orderProducts, {name, price, id}]
         setOrderProducts(array)
-        console.log(orderProducts)
+        console.log(array)
     }
+
     return (
         <>
         <HeaderW/>
