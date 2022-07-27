@@ -6,7 +6,7 @@ function OrderBox({ orderProducts }) {
         <div className='orderBox'>
         {orderProducts.map((element) => { 
             return (
-              <p  key={`${element.length}`}>{element}</p> 
+              <p className='orderProduct'  key={`${element.length}`}><span className = 'productName' >{element.name}</span>{element.price}</p> 
             )
           })}
         </div>

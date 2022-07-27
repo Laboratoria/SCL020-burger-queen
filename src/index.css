@@ -102,6 +102,9 @@ h1{
   height: 50%;
   background-color: white;
   margin-left: 27%;
+  display: flex;
+  flex-direction: column;
+  
 }
 .sendToKitchen{
   background-color: #5BF157;
@@ -144,4 +147,7 @@ h1{
 }
 button:hover{
   background-color: #ff914d;
+}
+.productName{
+  margin-right: 150px;
 }
