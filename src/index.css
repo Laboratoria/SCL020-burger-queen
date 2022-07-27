@@ -1,3 +1,100 @@
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  background: #747bff;
+}
+
+.home{
+ display: grid;
+ align-content: center;
+ justify-content: center;
+ }
+
+.title{
+ margin-top: 90%;
+ margin-bottom:10%;
+ }
+
+.subtitle{
+ margin-left: 20%;
+ word-spacing: 0.25em;
+ margin-top: 5px;
+ 
+}
+
+.btnContinuar{
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 15px;
+}
+
+.btnGrupo{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.mesas{
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #F6F650; 
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+.nameClient{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  border-radius: 5px;
+}
+
+.menu{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.btnMenu{
+  background-color: #F6F650; 
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
+ 
+}
+
+.btnSendOrderF{
+  display: flex; 
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 480px;
+}
+
+.btnSendOrderCh{
+  
+  background-color: #F6F650; 
+  color: black;
+  padding: 15px 32px;
+  
+}
+
+
+
+/*
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -68,3 +165,4 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+*/
