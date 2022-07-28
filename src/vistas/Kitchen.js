@@ -1,7 +1,6 @@
 import React from "react"
 import {BrowserRouter} from "react-router-dom";
 import TitlesHeader from "../components/TitlesHeader";
-
 function Kitchen() {
     return(
         <>
@@ -10,5 +9,4 @@ function Kitchen() {
 </>
     )
 }
-
 export default Kitchen

@@ -27,7 +27,6 @@ body {
   margin-bottom: 100px;
   padding-right: 100px;
   }
-
 .imgHome{
   align-content: center;
   justify-content: center;
@@ -40,7 +39,7 @@ body {
  position: relative;
 }
 .btnHome{
-  background-color: #edf5d9;
+  background-color: #EDF5D9;
   width: 200px;
   height: 50px;
   border-radius: 10px;
@@ -48,7 +47,6 @@ body {
   font-size: large;
   margin-bottom: 10%;
 }
-
 #root{
   width: 100vw;
   height: 100vh;
@@ -95,16 +93,13 @@ h1{
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-  
 }
 .orderBox{
   width: 53%;
   height: 50%;
   background-color: white;
   margin-left: 27%;
-  display: flex;
-  flex-direction: column;
-  
+  margin-top: -30%;
 }
 .sendToKitchen{
   background-color: #5BF157;
@@ -119,16 +114,52 @@ h1{
 .menuButtons{
   display: flex;
   flex-direction: column;
+  width: 30%;
+  height: 45%;
+  margin-top: 0.9%;
+}
+.menuButton{
+background-color: #FFEB84;
+width: 80%;
+height: 30%;
+border: none;
+font-size: 23px;
+border-radius: 0 10px 10px 0;
+margin-top: 8%;
+}
+.dessertButton{
+  background-color: #FFEB84;
+width: 100%;
+height: 100%;
+border: none;
+font-size: 18px;
+border-radius: 10px;
+margin: 2%;
+}
+.vegTableButton{
+  background-color: #FFEB84;
   width: 100%;
   height: 100%;
-  margin-top: 0.9%;
+  border: none;
+  font-size: 20px;
+  border-radius: 10px;
+  margin: 2%;
 }
 .tableButton{
   background-color: #FFEB84;
   width: 100%;
-  height: 20%;
+  height: 100%;
   border: none;
   font-size: 20px;
+  border-radius: 10px;
+  margin: 2%;
+}
+.drinkButton{
+  background-color: #FFEB84;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 18px;
   border-radius: 10px;
   margin: 2%;
 }
@@ -136,18 +167,7 @@ h1{
   width: 140px;
   height: 47px;
   margin: 10px;
-  border: none;
-  background-color: #FFEB84;
-  border-radius: 10px;
-  font-size: 18px;
-}
-.container-menu{
-  width: 30%;
-  height: 40%;
 }
 button:hover{
-  background-color: #ff914d;
-}
-.productName{
-  margin-right: 150px;
+  background-color: #FF914D;
 }
