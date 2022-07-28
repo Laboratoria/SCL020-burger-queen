@@ -1,14 +1,10 @@
 import {Link} from "react-router-dom";
+import Card2 from "../card/card2";
 const Cocina= () => {
     return (
       <>
         <main>
-          <h2>Cocina</h2>
-          
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
-          <button>4</button>
+          <Card2 item= {"papas"}/>
         </main>
         <nav>
           <Link to="/delivery">Pedidos listos</Link>
