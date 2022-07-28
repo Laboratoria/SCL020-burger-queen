@@ -6,7 +6,7 @@ import ShowMenuButton from '../components/MenuButtons.js';
 
 
 function Waiter () {
-    /* hola chicas */
+    /* hola chicas :) */
     return (
 
         <>
