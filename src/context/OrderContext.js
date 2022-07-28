@@ -13,7 +13,7 @@ export const OrderProvider = ({ children }) => {
     });
 
     useEffect(() => {
-        localStorage.setItem('orderProducts'.JSON.stringify(orderItems));
+        localStorage.setItem('orderProducts', JSON.stringify(orderItems));
     }, [orderItems]);
 
     const addItemToOrder = (product) => {

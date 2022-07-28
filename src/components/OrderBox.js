@@ -1,20 +1,16 @@
 import React from 'react';
-import { useState } from 'react';
 
-
-
-
-
-function OrderBox() {
-    const [addDetalls, setAddDetalls] = useState('');
+function OrderBox({ orderProducts }) {
     return (
-        
+        <>
         <div className='orderBox'>
-    
-            <textarea className="form-control" placeholder='Observaciones' value={addDetalls}
-                                onChange={(e) => setAddDetalls(e.target.value)}
-                            ></textarea>  
+        {orderProducts.map((element) => { 
+            return (
+              <p className='orderProduct'  key={`${element.length}`}><span className = 'productName' >{element.name}</span>{element.price}</p> 
+            )
+          })}
         </div>
+        </>
     );
 }
 
