@@ -13,12 +13,15 @@ import TablesState from './vistas/TablesState.js';
 function App() {
   return (
 
+
 <Routes>
         <Route path="" element={<Home/>}></Route>
         <Route path="/waiter" element={<Waiter/>}></Route>
         <Route path="/kitchen" element={<Kitchen/>}></Route>
         <Route path="/tablesState" element={<TablesState/>}></Route>   
 </Routes>
+
+
 
  )
 }
