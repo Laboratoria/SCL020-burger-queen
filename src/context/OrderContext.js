@@ -43,11 +43,12 @@ export const OrderProvider = ({ children }) => {
                     orderItems.filter((productInOrder) => productInOrder.id !== product.id)
                 );
             } else {
-                setOrderItems((productInOrder) => {
+                setOrderItems(
+                    orderItems.map((productInOrder) => {
                     if (productInOrder.id === product.id) {
                         return { ...inOrder, amount: inOrder.amount - 1 }
                     } else return productInOrder
-                });
+                }));
             }
         };
 

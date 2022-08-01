@@ -100,6 +100,7 @@ h1{
   background-color: white;
   margin-left: 27%;
   margin-top: -30%;
+  overflow:scroll;
 }
 .sendToKitchen{
   background-color: #5BF157;
@@ -170,4 +171,15 @@ margin: 2%;
 }
 button:hover{
   background-color: #FF914D;
+}
+.editButtons{
+  height: 30px;
+  width: 30px;
+  border: none;
+  color: black;
+  background-color:#5BF157;
+  border-radius: 50%;
+}
+.editButtons:hover{
+  background-color: #36c307;
 }
