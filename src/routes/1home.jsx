@@ -18,8 +18,13 @@ const Home = () => {
           </div>
 
         </main>
-        <nav class="btnContinuar">
-          <Link to="/login">Continuar</Link>
+        <nav class="btnIngresar">
+          {/* Boton continuar nos lleva al login con click o */}
+          <Link to="/login">Ingresar</Link>
+        </nav>
+        <nav class="btnRegistrar">
+          {/* Boton continuar nos lleva al login con click o */}
+          <Link to="/login">Registrar</Link>
         </nav>
       </div>
     </>
