@@ -22,16 +22,21 @@ const total = orderItems.reduce(
     0
     );
     
+    const handleClick = (newTable) => {
+        localStorage.setItem('orderProducts', []);
+        setTableOpen(newTable)
+    }
+
     return (
         <>
         
         <header className="waiterHeader">
         <h1>Mesa</h1>
-        <button onClick={() => setTableOpen(!tableOpen)} className= "tables">1</button>
-        <button onClick={() => setTableOpen(!tableOpen)} className= "tables">2</button>
-        <button className= "tables">3</button>
-        <button className= "tables">4</button>
-        <button className= "tables">5</button>
+        <button onClick={() => handleClick(1)} className= "tables">1</button>
+        <button onClick={() => handleClick(2)} className= "tables">2</button>
+        <button onClick={() => handleClick(3)} className= "tables">3</button>
+        <button onClick={() => handleClick(4)} className= "tables">4</button>
+        <button onClick={() => handleClick(5)} className= "tables">5</button>
         <Link to="/tablesState">
         <button className= "check">check</button>
         </Link>
@@ -39,7 +44,7 @@ const total = orderItems.reduce(
         <ShowMenuButton/>
         {orderItems && tableOpen && (
         <div className='orderBox'>
-            <h2>Pedido Mesa</h2>
+            <h2>Pedido Mesa {tableOpen}</h2>
             <h3>Cantidad de Productos: {productsLength}</h3>
             {orderItems.length === 0 ? <p>Agregar productos</p> : (
                 <div>
