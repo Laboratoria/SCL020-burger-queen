@@ -22,6 +22,7 @@ const total = orderItems.reduce(
     );
 
 return(
+    <>
     <header className="waiterHeader">
         <h1>Mesa</h1>
         <button onClick={() => setTableOpen(!tableOpen)} className= "tables">1</button>
@@ -32,7 +33,8 @@ return(
         <Link to="/tablesState">
         <button className= "check">check</button>
         </Link>
-        {orderItems && tableOpen && (
+    </header>
+    {orderItems && tableOpen && (
         <div className='prueba'>
             <h2>Pedido Mesa</h2>
             <h3>Cantidad de Productos: {productsLength}</h3>
@@ -46,7 +48,7 @@ return(
             <h2>Total:${total}</h2>
         </div>
         ) }
-    </header>
+        </>
 )
 
 }
