@@ -7,6 +7,7 @@ import DessertOptions from "./DessertOptions.js";
 function ShowMenuButton() {
   const menuButtons = ["Tablas", "Tablas Veg", "Bebestibles", "Postres"];
   const [selected, setSelected] = useState("");
+  //probar esta lógica en las mesas
   return (
     <>
       <div className="menuOptions">
