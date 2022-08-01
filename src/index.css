@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "KaushanScript-Regular";
+  src: url("assets/font/KaushanScript-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
 *{
   margin: 0px;
   padding: 0px;
@@ -8,6 +15,9 @@ body{
   background: #faebce;
 }
 
+
+
+
 .home{
  display: grid;
  align-content: center;
@@ -15,34 +25,48 @@ body{
  }
 
 .title{
- margin-top: 90%;
+  display: flex;
+  flex-direction: column;
+Justify-content: space-between;
+align-items: center;
+ margin-top: 20%;
  margin-bottom:10%;
  font-family: KaushanScript-Regular;
+ font-size: 150%;
  }
 
-.subtitle{
- margin-left: 20%;
- word-spacing: 0.25em;
- margin-top: 5px;
- 
+ .logo{
+width: 20%;
+
 }
 
-.btnContinuar{
+
+
+.containerHome{
+display: flex;
+flex-direction: column;
+Justify-content: space-between;
+
+}
+
+.btnIngresar, .btnRegistrar{
   padding: 0.8em 1.8em;
-  border: 2px solid #17C3B2;
+  border: 2px solid #F6F650;
+  border-radius: 10px;
   position: relative;
   overflow: hidden;
-  background-color: transparent;
+  background-color: #DAF7A6;
   text-align: center;
   text-transform: uppercase;
   font-size: 16px;
   transition: .3s;
   z-index: 1;
   font-family: inherit;
-  color: #17C3B2;
+  color: black;
+  margin: 10px;
  }
  
- .btnContinuar::before {
+ /*.btnContinuar::before {
   content: '';
   width: 0;
   height: 300%;
@@ -62,7 +86,7 @@ body{
  
  button:hover {
   color: #111;
- }
+ }*/
  
 
 .btnGrupo{
@@ -73,14 +97,24 @@ body{
 
 .mesas{
   display: flex;
-  flex-direction: row-reverse;
-  background-color: #F6F650; 
+  flex-direction: row;
+  Justify-content: flex-end;
+ 
+  gap: 10px;
+  
+  
+}
+
+.mesa{
+  width: 20%;
+  background-color: #F6F650;
   color: black;
-  padding: 15px 32px;
+  padding: 15% 32%;
   text-align: center;
   font-size: 16px;
   border-radius: 15px;
   margin-top: 10px;
+  justify-content: space-between;
 }
 
 .nameClient{
