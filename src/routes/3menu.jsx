@@ -6,8 +6,8 @@ const Menu= () => {
     return (
       <>
         <main>
-          <div >
-           <Button label={1}/>
+          <div class="mesas" >
+           <Button class="mesa" label={1}/>
            <Button label={2}/>
            <Button label={3}/>
            <Button label={4}/>
