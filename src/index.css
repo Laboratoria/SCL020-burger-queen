@@ -5,51 +5,52 @@
   font-weight: 400;
 }
 
-*{
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
-body{
+body {
   background: #faebce;
 }
 
 
 
 
-.home{
- display: grid;
- align-content: center;
- justify-content: center;
- }
+.home {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
 
-.title{
+.title {
   display: flex;
   flex-direction: column;
-Justify-content: space-between;
-align-items: center;
- margin-top: 20%;
- margin-bottom:10%;
- font-family: KaushanScript-Regular;
- font-size: 150%;
- }
+  Justify-content: space-between;
+  align-items: center;
+  margin-top: 20%;
+  margin-bottom: 10%;
+  font-family: KaushanScript-Regular;
+  font-size: 150%;
+}
 
- .logo{
-width: 20%;
+.logo {
+  width: 20%;
 
 }
 
 
 
-.containerHome{
-display: flex;
-flex-direction: column;
-Justify-content: space-between;
+.containerHome {
+  display: flex;
+  flex-direction: column;
+  Justify-content: space-between;
 
 }
 
-.btnIngresar, .btnRegistrar{
+.btnIngresar,
+.btnRegistrar {
   padding: 0.8em 1.8em;
   border: 2px solid #F6F650;
   border-radius: 10px;
@@ -64,9 +65,9 @@ Justify-content: space-between;
   font-family: inherit;
   color: black;
   margin: 10px;
- }
- 
- /*.btnContinuar::before {
+}
+
+/*.btnContinuar::before {
   content: '';
   width: 0;
   height: 300%;
@@ -87,25 +88,25 @@ Justify-content: space-between;
  button:hover {
   color: #111;
  }*/
- 
 
-.btnGrupo{
+
+.btnGrupo {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
 
-.mesas{
+.mesas {
   display: flex;
   flex-direction: row;
   Justify-content: flex-end;
- 
+
   gap: 10px;
-  
-  
+
+
 }
 
-.mesa{
+.mesa {
   width: 20%;
   background-color: #F6F650;
   color: black;
@@ -117,42 +118,42 @@ Justify-content: space-between;
   justify-content: space-between;
 }
 
-.nameClient{
+.nameClient {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   border-radius: 5px;
 }
 
-.menu{
+.menu {
   display: flex;
   justify-content: center;
   gap: 50px;
 }
 
-.btnMenu{
-  background-color: #F6F650; 
+.btnMenu {
+  background-color: #f6ab50;
   color: black;
   padding: 15px 32px;
   text-align: center;
   font-size: 16px;
   margin-top: 10px;
- 
+
 }
 
-.btnSendOrderF{
-  display: flex; 
+.btnSendOrderF {
+  display: flex;
   justify-content: center;
   align-items: flex-end;
   margin-top: 480px;
 }
 
-.btnSendOrderCh{
-  
-  background-color: #F6F650; 
+.btnSendOrderCh {
+
+  background-color: #F6F650;
   color: black;
   padding: 15px 32px;
-  
+
 }
 
 
