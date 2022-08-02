@@ -1,28 +1,28 @@
+import React from "react";
 import { Link } from "react-router-dom";
-// const logo = require.context ('../../assets/img', true);
+import logo from '../assets/img/lemons.png';
+
+
+// Buscar template login/register - icons chef - mesero
+
+
 
 const Home = () => {
   return (
     <>
-      <div class="home">
-        <main>
-          <div class="title">
-             <img className="logo" src="./src/assets/img/lemons.png" alt="" /> 
-            <h1 className="text-3xl font-bold underline">Lemon Restaurant </h1>
-          </div>
-          
-        </main>
-
-        <div className="containerHome">
-          <nav class="btnIngresar">
-            {/* Boton continuar nos lleva al login con click o */}
-            <Link to="/login">Ingresar</Link>
-          </nav>
-          <nav class="btnRegistrar">
-            {/* Boton continuar nos lleva al login con click o */}
-            <Link to="/login">Registrar</Link>
-          </nav>
+      <div className="home">
+        <div class="logo">
+          <img src={logo} alt="logo" />
+          <h1 className="textLogo">Lemon Restaurant </h1>
         </div>
+        <div className="btnHome">
+            {/* Boton continuar nos lleva al login con click o */}
+            <Link to="/login" className="btnlogin">Ingresar</Link>
+            {/* Boton continuar nos lleva al login con click o */}
+            <Link to="/register" className="btnregister">Crear Cuenta</Link>
+        </div>
+        {/* icon mesero -> menu
+        icon chef -> chef */}
       </div>
     </>
   );
