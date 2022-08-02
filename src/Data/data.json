@@ -1,0 +1,67 @@
+{
+  "menu": [
+  {
+    "id": "1",
+    "name": "Ñoquis al pesto",
+    "price": "10$",
+    "img": "",
+    "type": "menuvegetariano"
+  },
+  {
+    "id": "2",
+    "name": "Crema de zapallo",
+    "price": "14$",
+    "img": "",
+    "type": "menuvegetariano"
+  },
+  {
+    "id": "3",
+    "name": "Lasagna de verduras",
+    "price": "18$",
+    "img": "",
+    "type": "menuvegetariano"
+  },
+  {
+    "id": "4",
+    "name": "Lomo saltado",
+    "price": "15$",
+    "img": "",
+    "type": "menucarne"
+  },
+  {
+    "id": "5",
+    "name": "Asado Negro",
+    "price": "19$",
+    "img": "",
+    "type": "menucarne"
+  },
+  {
+    "id": "6",
+    "name": "Chorrillana",
+    "price": "17$",
+    "img": "",
+    "type": "menucarne"
+  },
+  {
+    "id": "7",
+    "name": "Extra de queso",
+    "price": "5$",
+    "img": "",
+    "type": "agregados"
+  },
+  {
+    "id": "8",
+    "name": "Extra de albahaca",
+    "price": "7",
+    "img": "",
+    "type": "agregados"
+  },
+  {
+    "id": "9",
+    "name": "Extra de rucula",
+    "price": "3",
+    "img": "",
+    "type": "agregados"
+  }
+]
+}

@@ -1,14 +1,21 @@
-const Card = ({ title, image, price }) => {
+import React, { useContext } from 'react';
+import menu from '../Data/data.json';
 
-
-    
+const Card = ({ props }) => {
+  // const { addDish } = useContext(SelectionContext);
+  const filterMenu = menu.menu.filter((element) => {
+    return element.type === props;
+  });
   return (
-    <div className="flex flex-col items-center  bg-[#16a34a] border-spacing-1 m-7 w-40 p-0.5">
-      <span className="text-xs font-bold text-black">{title}</span>
-      <img className="w-14 h-14 border-radius: 50%" src={image} alt="" />
-      <span className="text-xs font-bold text-black">{price}</span>
-    </div>
-  );
-};
-
-export default Card;
+    <div className="cardContainer">
+      {filterMenu.map((item, index) => (
+        <div className="cardMenuElements" key={index} onClick={() => addDish(item)}>
+          <img className="cardMenu-img" scr={item.img} alt="dish img" />
+          <h2>{item.name}</h2>
+          <p>${item.price}</p>
+        </div>
+      ))}
+</div>
+      );
+  };
+export default Card;  
