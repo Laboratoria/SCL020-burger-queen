@@ -1,11 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from '../assets/img/lemons.png';
-import { LockClosedIcon } from '@heroicons/react/solid'
+import LoginForm from "../Components/Common/Login";
+// import logo from '../assets/img/lemons.png';
+// import { LockClosedIcon } from '@heroicons/react/solid'
 const Login = () => {
   return (
     <>
-      <main className="login">
+      <LoginForm/>
+      <nav>
+        <Link to="/menu">Ingresar</Link>
+      </nav>
+    </>
+  );
+}
+export default Login
+
+
+
+{/* <main className="login">
         <div class="logo">
           <img src={logo} alt="logo" />
           <h1 className="textLogo">Lemon Restaurant </h1>
@@ -65,18 +77,10 @@ const Login = () => {
               <span className="absolute left-0 inset-y-0 flex items-center pl-3">
                 <LockClosedIcon className="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" aria-hidden="true" />
               </span>
-              {/*  */}
+              
               Sign in
             </button>
           </div>
         </form>
-        {/* </div>
-      </div> */}
-      </main>
-      <nav>
-        <Link to="/menu">Ingresar</Link>
-      </nav>
-    </>
-  );
-}
-export default Login
+       
+      </main> */}
