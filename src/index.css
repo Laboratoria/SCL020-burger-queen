@@ -183,3 +183,18 @@ button:hover{
 .editButtons:hover{
   background-color: #36c307;
 }
+.kitchenCommandsArea{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+.command{
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  margin: 15px;
+}
+li{
+  text-decoration: none;
+}
