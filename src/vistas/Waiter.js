@@ -4,12 +4,16 @@ import ItemTable from '../components/ItemTable';
 import { useContext, useEffect, useState } from 'react';
 import { OrderContext } from '../context/OrderContext';
 import { Link } from 'react-router-dom';
+import { addDoc } from 'firebase/firestore';
+import { db, collection } from '../firebase';
+
 
 function Waiter () {
     const [tableOpen, setTableOpen] = useState(false);
 const [productsLength, setProductsLength] = useState(0);
 
 const {orderItems} = useContext(OrderContext)
+console.log(orderItems)
 
 useEffect(() => {
     setProductsLength(
@@ -17,15 +21,30 @@ useEffect(() => {
     );
 }, [orderItems]);
 
+
 const total = orderItems.reduce(
     (previous, current) => previous + current.amount * current.price, 
     0
     );
     
+    
     const handleClick = (newTable) => {
         localStorage.setItem('orderProducts', []);
         setTableOpen(newTable)
     }
+
+    const saveOrder = async (e) => {
+        try { await addDoc(collection(db, "waitersOrders"), {
+                mesa: tableOpen,
+                items: orderItems,
+                total: total,
+                estatus: 'pendiente'
+              });
+        } catch (error) {
+            console.error("Error adding document: ", e);
+        } 
+    }
+
 
     return (
         <>
@@ -56,7 +75,7 @@ const total = orderItems.reduce(
             <h2>Total:${total}</h2>
         </div>
         ) }
-        <button className='sendToKitchen'>Enviar a cocina</button>
+        <button onClick={()=>saveOrder()} className='sendToKitchen'>Enviar a cocina</button>
         
         </>
     )
