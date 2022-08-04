@@ -18,10 +18,4 @@ function App() {
  )
 }
 export default App;
-/*<BrowserRouter>
-<Routes>
-<Route path='/' element={<Home />} />
-      <Route path='/Menu' element={ <Waiter />} />
-      <Route path='/Cook' element={ <Kitchen />} />
-</Routes>
-</BrowserRouter>*/
+

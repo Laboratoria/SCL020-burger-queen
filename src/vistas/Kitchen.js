@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import TitlesHeader from "../components/TitlesHeader";
 import { db,  collection } from '../firebase';
 import { onSnapshot,
@@ -6,20 +6,31 @@ import { onSnapshot,
     query,
     orderBy} from 'firebase/firestore'
 
-function Kitchen() {
 
-    const updatingPublications = (callback) => {
-        const q = query(collection(db, "waitersOrders"), orderBy("Time", "desc"));
-        console.log(collection)
-        onSnapshot(q, callback);
-      };
-updatingPublications()
+function Kitchen() {
+   
+     useEffect (() => {
+        const updatingPublications = () => {
+            const q = query(collection(db, "waitersOrders"));
+            // console.log(q)
+            onSnapshot(q, callback);
+          };
+          updatingPublications()
+
+    }, [])
+    const callback = (data) => {
+        data.docs.map((order) => {
+            console.log(data.docs)
+        })
+        console.log(data)
+        }
+    
 
     return(
         <>
 <TitlesHeader title = 'Cocina'/>
 <div className = 'kitchenCardsArea'>
-  <h1>{doc}</h1>
+  
     
 </div>
 </>
