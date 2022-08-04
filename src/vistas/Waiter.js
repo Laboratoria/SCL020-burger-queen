@@ -13,7 +13,7 @@ function Waiter () {
 const [productsLength, setProductsLength] = useState(0);
 
 const {orderItems} = useContext(OrderContext)
-console.log(orderItems)
+// console.log(orderItems)
 
 useEffect(() => {
     setProductsLength(
@@ -31,6 +31,7 @@ const total = orderItems.reduce(
     const handleClick = (newTable) => {
         localStorage.setItem('orderProducts', []);
         setTableOpen(newTable)
+        
     }
 
     const saveOrder = async (e) => {
@@ -44,7 +45,6 @@ const total = orderItems.reduce(
             console.error("Error adding document: ", e);
         } 
     }
-
 
     return (
         <>
