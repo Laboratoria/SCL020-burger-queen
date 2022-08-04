@@ -1,0 +1,23 @@
+[
+    {
+        "id": "7",
+        "name": "Extra de queso",
+        "price": "5$",
+        "img": "",
+        "type": "agregados"
+      },
+      {
+        "id": "8",
+        "name": "Extra de albahaca",
+        "price": "7",
+        "img": "",
+        "type": "agregados"
+      },
+      {
+        "id": "9",
+        "name": "Extra de rucula",
+        "price": "3",
+        "img": "",
+        "type": "agregados"
+      }
+]
