@@ -10,11 +10,11 @@ export const OrderProvider = ({ children }) => {
         } catch (error) {
             return [];
         }
+        
     });
 
     useEffect(() => {
         localStorage.setItem('orderProducts', JSON.stringify(orderItems));
-        console.log(orderItems)
     }, [orderItems]);
 
     const addItemToOrder = (product) => {
