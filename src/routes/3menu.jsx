@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
-
-
 import "./3menu.css";
 import menuVegetariano from "../Data/menuVegetariano.json";
 import MenuCarnes from "../Data/menuCarnes.json";
+import MenuAgregados from "../Data/menuagregados.json";
+
 import {
   Tabs,
   TabsHeader,
@@ -14,7 +14,7 @@ import {
 } from "@material-tailwind/react";
 
 const Menu = () => {
-  console.log("####", menuVegetariano);
+  const [count, setCount] = useState(0);
   const data = [
     {
       label: "Menú Vegetariano",
@@ -23,6 +23,10 @@ const Menu = () => {
     {
       label: "Menú Carnes",
       value: "MenuCarnes",
+    },
+    {
+      label: "Menú Agregados",
+      value: "MenuAgregados",
     },
   ];
   return (
@@ -40,7 +44,7 @@ const Menu = () => {
           </li>
         </ul>
       </header>
-      <Tabs value="MenuVegetariano">
+      <Tabs value="Menu">
         <TabsHeader>
           {data.map(({ label, value }) => (
             <Tab key={value} value={value}>
@@ -52,13 +56,14 @@ const Menu = () => {
           <TabPanel key={"MenuVegetariano"} value={"MenuVegetariano"}>
             <div class="cont-card">
               {menuVegetariano.map((item) => (
-                <div class="card">
+
+               <div class="card">
                   <h3>{item.name}</h3>
-                  <img src={item.img} alt="" />
+                  <img class="dish" src={item.img} alt="" />
                   <span class="price">{item.price}</span>
                 </div>
               ))}
-              ;
+             
             </div>
           </TabPanel>
 
@@ -67,15 +72,26 @@ const Menu = () => {
               {MenuCarnes.map((item) => (
                 <div class="card">
                   <h3>{item.name}</h3>
-                  <img src={item.img} alt="" />
+                  <img class="dish" src={item.img} alt="" />
                   <span class="price">{item.price}</span>
                 </div>
               ))}
-              ;
+              
             </div>
           </TabPanel>
 
-          
+          <TabPanel key={"MenuAgregados"} value={"MenuAgregados"}>
+            <div class="cont-card">
+              {MenuAgregados.map((item) => (
+                <div class="card">
+                  <h3>{item.name}</h3>
+                  <img class="dish" src={item.img} alt="" />
+                  <span class="price">{item.price}</span>
+                </div>
+              ))}
+              
+            </div>
+            </TabPanel>
         </TabsBody>
       </Tabs>
 
@@ -85,4 +101,21 @@ const Menu = () => {
     </>
   );
 };
-export default Menu;
+export default Menu
+
+
+// import React, { useState } from 'react';
+//  2:
+//  3:  function Example() {
+  //  const [count, setCount] = useState(0);
+//  4:    const [count, setCount] = useState(0);
+//  5:
+//  6:    return (
+//  7:      <div>
+//  8:        <p>You clicked {count} times</p>
+//  9:        <button onClick={() => setCount(count + 1)}>
+// 10:         Click me
+// 11:        </button>
+// 12:      </div>
+// 13:    );
+// 14:  }

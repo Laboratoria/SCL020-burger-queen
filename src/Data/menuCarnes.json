@@ -17,7 +17,7 @@
         "id": "6",
         "name": "Chorrillana",
         "price": "17$",
-        "img": "",
+        "img": "src/assets/img/lomosaltado.jpg",
         "type": "menucarne"
       }
 ]
