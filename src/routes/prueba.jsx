@@ -158,3 +158,4 @@ const Menu = ({ history, setOrders, tableRegister }) => {
 }
 }
   export default withRouter(Menu)
+  //
