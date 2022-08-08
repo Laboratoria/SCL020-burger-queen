@@ -31,20 +31,19 @@ function Kitchen() {
           updatingPublications()
 
     }, [])
-    console.log(orders)
     // console.log(orders[0].items[0].name)
-orders.map((order, i) => (
-    order.items.map((item) => (
-        console.log(item)
-    ))
-))
+// orders.map((order, i) => (
+//     order.items.map((item) => (
+//         console.log(item)
+//     ))
+// ))
     return(
         <>
 <TitlesHeader title = 'Cocina'/>
 <div className = 'kitchenCommandsArea'>
 
   {orders.map((order, i) => (
-    <Command order = {order}/>
+    <Command order = {order} i = {i} key = {i}/>
    
         ))}
 </div>
