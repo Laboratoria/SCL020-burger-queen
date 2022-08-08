@@ -186,15 +186,46 @@ button:hover{
 .kitchenCommandsArea{
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
 }
 .command{
   width: 200px;
-  height: 200px;
+  min-height: 100px;
   background-color: yellow;
   margin: 15px;
+  border-radius: 10px;
+  padding: 10px;
 }
 li{
   text-decoration: none;
 }
+.ready{
+  width: 80px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #5BF157;
+  margin-left: 30%;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.ready:hover{
+  background-color: #36c307;
+}
+.titlesHeader{
+  background-color: rgb(32, 8, 8);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  height: 10%;
+  align-items: center;
+}
+.pKitchen{
+  margin-left: 2%;
+}
+/* @media screen and (min-width:768px) and (max-width:1025px){
+  .orderBox{
+    margin-top: -50%;
+  }
+} */
