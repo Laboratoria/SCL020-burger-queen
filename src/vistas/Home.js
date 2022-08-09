@@ -11,9 +11,8 @@ import { Link } from "react-router-dom";
 function Home() {
     return (
         <div className="BodyHome">
-            <div className='ContainerHome'>
-                <img className='imgHome' alt="logo-home" src="../imagenes/logo-Shonagai.png"></img>
                 <div className='ContainerButtons'>
+                <img className='imgHome' alt="logo-home" src="../imagenes/logo-Shonagai.png"></img>
                     <Link to="/waiter">
                         <Buttons className='btn-waiter' name="GARZÓN" />
                     </Link>
@@ -21,7 +20,6 @@ function Home() {
                         <Buttons className='btn-Kitchen' name="COCINA" />
                     </Link>
                 </div>
-            </div>
         </div>
     );
 }
