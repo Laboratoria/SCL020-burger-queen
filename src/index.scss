@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+@font-face {
+  src: url('./assets/fonts/PlayfairDisplay-SemiBold.ttf');
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 700;
+}
+
+@font-face {
+  src: url('./assets/fonts/Nunito-ExtraLight.ttf');
+  font-family: 'Nunito', sans-serif;
+  font-weight: 200;
+}
+
+@font-face {
+  src: url('./assets/fonts/Nunito-Regular.ttf');
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url('./assets/fonts/Nunito-SemiBold.ttf');
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+}
+
+$heading-font-family: 'Playfair Display', sans-serif;
+$body-font-family: 'Nunito', sans-serif;
+$base-font-size: 1rem;
+$small-font-size: 0.9rem;
+$base-font-weight: 400;
+
+$color-primary: #f28dbc;
+$color-secondary: #f6d0e4;
+$color-bg: #f7edf5;
+$color-accent: #bf0449;
+$color-nav-icon: #f4a1bd;
+$color-btn1: #f29f05;
+$color-btn2: #41abb5;
+$color-card: #f4f0ee;
+$color-card2: #eae6e6;
+$color-dark: #393C49;
+
+#root {
+  width: 100%;
+}
+
+body {
+  background-image: url('src/assets/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: $body-font-family;
+  font-weight: 200;
+}
+
+h1 {
+  font-family: $heading-font-family;
+  color: $color-dark;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  cursor: pointer;
+}
+ 
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: rgba(161, 67, 131, 0.05);
+  padding: 5%;
+  border-radius: 3%;
+  box-shadow: 2px 3px 9px 0px rgba(173, 155, 155, 0.51);
+  -webkit-box-shadow: 2px 3px 9px 0px rgba(173, 155, 155, 0.51);
+  -moz-box-shadow: 2px 3px 9px 0px rgba(173, 155, 155, 0.51);
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 35%;
+}
+
+.toView {
+  margin: 7%;
+}
+
+.main-icons {
+  width: 90%;
+  height: auto;
+  padding: 10%;
+  background-color: $color-card;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+
+.main-icons:hover {
+  border-color: $color-primary;
+}
+.main-icons:focus,
+.main-icons:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+input {
+  background-color: $color-card;
+  margin: 5%;
+  width: 50%;
+  padding: 1%;
+  border-radius: 4px;
+  border: 1px solid $color-accent;
+}
+
+/*WAITER & CHEF VIEW*/
+.waiter-container,
+.chef-container {
+  display: grid;
+  grid-template-columns: 7% 63% 30%;
+  grid-template-rows: 100%;
+  justify-content: flex-start;
+  width:100%;
+  background-color: $color-bg;
+}
+
+.chef-container {
+  display: grid;
+  grid-template-columns: 7% 93%;
+  grid-template-rows: 100%;
+}
+
+.waiter-middle,
+.chef-middle {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 10px 20px 10px 30px;
+  overflow: scroll;
+}
+
+.waiter-category,
+.chef-category {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-between;
+  font-weight: 400;
+  color: $color-dark;
+  text-align: start;
+  border-bottom:1px solid $color-dark;
+  padding: 0;
+}
+
+.chef-category {
+  width: 15%;
+}
+.waiter-category li:hover,
+.chef-category li:hover {
+  color: $color-accent;
+}
+
+.waiter-category li,
+.chef-category li {
+ margin: 5px;
+}
+
+/*SIDEBAR*/
+.sidebar {
+  background-color: $color-primary;
+  display: flex;
+  flex-direction: column;
+  border-top-right-radius: 30px 20px;
+}
+
+.sidebar-ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-li {
+  margin: 0;
+  padding: 20px;
+}
+
+.sidebar-icons {
+  width: 70%;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.sidebar-icons:hover {
+  background-color: $color-nav-icon;
+}
+
+.sidebar-li-end {
+  margin-top: 250px;
+}
+
+@media screen and (min-width: 1200px) {
+  .waiter-middle {
+      min-width: 930px;
+  }
+}

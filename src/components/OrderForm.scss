@@ -1,0 +1,143 @@
+@use 'src/index' as s;
+
+/*ORDER FORM COMPONENT*/
+h2 {
+  font-family: 'Playfair Display';
+  font-weight: 400;
+  color: s.$color-dark;
+  font-size: 26px;
+}
+
+.orderform {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 0.2fr 0.2fr 0.2fr 2.0fr 1fr;
+  background-color: s.$color-secondary;
+  padding: 30px;
+  overflow: hidden;
+}
+
+.orderform-client {
+  margin: 20px 0px 20px 0px;
+}
+
+.orderform-tables, 
+.orderitem-size {
+  background-color: s.$color-card;
+  padding: 4px;
+  border-radius: 4px;
+  font-size: s.$small-font-size;
+  font-family: s.$body-font-family;
+  font-weight: 200;
+  border: 1px solid s.$color-accent;
+  width: 35%;
+}
+
+.orderitem-size {
+  width: 20%;
+}
+
+.oderform-orderitem-container {
+  flex-grow: 1;
+  overflow-y: scroll;
+  max-height: 300px;
+}
+
+.orderform-details {
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 1px solid s.$color-dark;
+}
+
+.orderform-details1 {
+  flex: 0.7;
+}
+
+.orderform-details2 {
+  flex: 0.15;
+}
+
+.orderform-details3 {
+  flex: 0.15;
+  text-align: right;
+}
+
+.orderform-details p {
+  font-weight: 500;
+  color: s.$color-dark;
+  font-size: 17px;
+}
+
+.orderform-payment-details {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  border-top: 1px solid s.$color-dark;
+  line-height: 0;
+  color: s.$color-dark;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.orderform-btn {
+  padding: 5px;
+  width: auto;
+  height: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.3);
+  background-color: s.$color-accent;
+  border: none;
+  color: white;
+  font-weight: 500;
+  font-size: s.$base-font-size;
+}
+
+/*ORDER ITEM COMPONENT*/
+.orderitem-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.orderitem-selection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.orderitem-selection p {
+  width: 35px;
+}
+
+.orderitem-delete {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 0;
+}
+
+.orderitem-input-q,
+.orderitem-input {
+  background-color: s.$color-card;
+  margin: 0;
+  width: 60%;
+  padding: 4px;
+  border-radius: 4px;
+  font-size: s.$small-font-size;
+  font-family: s.$body-font-family;
+  font-weight: 200;
+  border: 1px solid s.$color-accent;
+}
+
+.orderitem-input-q {
+  width: 6%;
+  text-align: center;
+}
+
+.orderitem-deleteicon {
+  border: 1px solid s.$color-accent;
+  padding: 6px;
+  border-radius: 8px;
+  color: s.$color-accent;
+}
