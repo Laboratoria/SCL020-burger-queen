@@ -1,0 +1,228 @@
+*{
+  margin:0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  background-image:url("../public/imagenes/fondoPrueba.png") ;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.BodyHome{
+  background-image:url("../public/imagenes/fondo-definitivo-1er-template.jpg") ;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.ContainerButtons{
+ width: 25%;
+ height: 80%;
+ margin-right: 7%;
+ border: 4px black solid;
+ display: flex;
+ flex-direction: column;
+ justify-content: end;
+ align-items: center;
+ 
+  }
+
+.btnHome{
+  background-color: #EDF5D9;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  border:none;
+  font-size: large;
+  margin-bottom: 10%;
+  cursor: pointer;
+}
+#root{
+  width: 100vw;
+  height: 100vh;
+}
+h1{
+  margin: 0;
+}
+.waiterHeader{
+  background-color: rgb(32, 8, 8);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  height: 10%;
+  justify-content: space-around;
+  align-items: center;
+}
+.tables{
+  background-color: #FFEB84;
+  width: 12%;
+  border: none;
+  font-size: 25px;
+  border-radius: 7px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  cursor: pointer;
+}
+.check{
+  background-color: #FFEB84;
+  width: 100%;
+  border: none;
+  font-size: 23px;
+  border-radius: 7px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  cursor: pointer;
+}
+.tables:hover{
+  background-color: white;
+  height: 80%;
+}
+.menuOptions{
+  width: 80%;
+    height: 25%;
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.orderBox{
+  width: 53%;
+  height: 50%;
+  padding: 2%;
+  background-color: white;
+  margin-left: 27%;
+  margin-top: -30%;
+  overflow:scroll;
+}
+.sendToKitchen{
+  background-color: #5BF157;
+  font-size: 20px;
+  border-radius: 7px;
+  border: none;
+  width: 15%;
+  height: 7%;
+  position: relative;
+  top: -30%;
+  left: 83%;
+  cursor: pointer;
+}
+.menuButtons{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 45%;
+  margin-top: 0.9%;
+  
+}
+.menuButton{
+background-color: #FFEB84;
+width: 80%;
+height: 30%;
+border: none;
+font-size: 23px;
+border-radius: 0 7px 7px 0;
+margin-top: 8%;
+cursor: pointer;
+}
+.dessertButton{
+  background-color: #FFEB84;
+width: 100%;
+height: 100%;
+border: none;
+font-size: 18px;
+border-radius: 10px;
+margin: 2%;
+cursor: pointer;
+}
+.vegTableButton{
+  background-color: #FFEB84;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 20px;
+  border-radius: 10px;
+  margin: 2%;
+  cursor: pointer;
+}
+.drinkButton{
+  background-color: #FFEB84;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 18px;
+  border-radius: 10px;
+  margin: 2%;
+  cursor: pointer;
+}
+.buttonOptions{
+  width: 140px;
+  height: 47px;
+  margin: 10px;
+}
+button:hover{
+  background-color: #FF914D;
+}
+.editButtons{
+  height: 30px;
+  width: 30px;
+  border: none;
+  color: black;
+  background-color:#5BF157;
+  border-radius: 50%;
+}
+.editButtons:hover{
+  background-color: #36c307;
+}
+.kitchenCommandsArea{
+  display: flex;
+  flex-direction: row;
+  height: 90vh;
+  width: 95vw;
+  flex-wrap: wrap;
+}
+.command{
+  width: 200px;
+  height: 200px;
+  background-color: rgb(244, 244, 91);
+  margin: 15px;
+  border-radius: 10px;
+  padding: 10px;
+}
+li{
+  text-decoration: none;
+}
+.ready{
+  width: 80px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #5BF157;
+  margin-left: 30%;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.ready:hover{
+  background-color: #36c307;
+}
+.titlesHeader{
+  background-color: rgb(32, 8, 8);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  height: 10%;
+  align-items: center;
+}
+.pKitchen{
+  margin-left: 2%;
+}
+@media screen and (min-width:768px) and (max-width:1400px){
+  .orderBox{
+    margin-top: -22%;
+    width: 50%;
+  }
+  
+}
