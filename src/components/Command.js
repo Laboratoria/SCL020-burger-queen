@@ -17,6 +17,7 @@ export function Command({order, i}) {
     } catch (error) {
         console.error("Error adding document: ");
     } 
+    
 }
 
 
