@@ -3,6 +3,10 @@ import { createContext, useEffect, useState } from "react";
 export const OrderContext = createContext();
 
 export const OrderProvider = ({ children }) => {
+
+    // const [orderItems, setOrderItems] = useState([]);
+
+    //
     const [orderItems, setOrderItems] = useState(() => {
         try {
             const productsEnLocalStorage = localStorage.getItem('orderProducts');
@@ -12,10 +16,14 @@ export const OrderProvider = ({ children }) => {
         }
         
     });
+    //
+    console.log(orderItems)
 
+    //
     useEffect(() => {
         localStorage.setItem('orderProducts', JSON.stringify(orderItems));
     }, [orderItems]);
+    //
 
     const addItemToOrder = (product) => {
         const inOrder = orderItems.find(

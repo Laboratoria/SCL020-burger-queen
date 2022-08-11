@@ -12,7 +12,7 @@ function Waiter () {
     const [tableOpen, setTableOpen] = useState(false);
 const [productsLength, setProductsLength] = useState(0);
 
-const {orderItems} = useContext(OrderContext)
+const {orderItems, setOrderItems} = useContext(OrderContext)
 // console.log(orderItems)
 
 useEffect(() => {
@@ -29,9 +29,9 @@ const total = orderItems.reduce(
     
     
     const handleClick = (newTable) => {
+        
         localStorage.setItem('orderProducts', []);
         setTableOpen(newTable)
-        
     }
 
     const saveOrder = async (e) => {
@@ -41,6 +41,7 @@ const total = orderItems.reduce(
                 total: total,
                 estatus: 'pendiente'
               });
+            //   localStorage.setItem('orderProducts', []);
         } catch (error) {
             console.error("Error adding document: ", e);
         } 
@@ -74,6 +75,7 @@ const total = orderItems.reduce(
             )}
             <h2>Total:${total}</h2>
         </div>
+        
         ) }
         <button onClick={()=>saveOrder()} className='sendToKitchen'>Enviar a cocina</button>
         

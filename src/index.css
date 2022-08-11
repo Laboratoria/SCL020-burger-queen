@@ -15,16 +15,17 @@ body {
   height: 100vh;
   width: 100vw;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
 }
 .ContainerButtons{
- width: 45%;
- height: 60%;
+ width: 25%;
+ height: 80%;
+ margin-right: 7%;
  border: 4px black solid;
  display: flex;
  flex-direction: column;
- justify-content: center;
+ justify-content: end;
  align-items: center;
  
   }
@@ -37,6 +38,7 @@ body {
   border:none;
   font-size: large;
   margin-bottom: 10%;
+  cursor: pointer;
 }
 #root{
   width: 100vw;
@@ -62,6 +64,7 @@ h1{
   border-radius: 7px;
   margin-top: 1%;
   margin-bottom: 1%;
+  cursor: pointer;
 }
 .check{
   background-color: #FFEB84;
@@ -71,6 +74,7 @@ h1{
   border-radius: 7px;
   margin-top: 1%;
   margin-bottom: 1%;
+  cursor: pointer;
 }
 .tables:hover{
   background-color: white;
@@ -104,6 +108,7 @@ h1{
   position: relative;
   top: -30%;
   left: 83%;
+  cursor: pointer;
 }
 .menuButtons{
   display: flex;
@@ -111,6 +116,7 @@ h1{
   width: 30%;
   height: 45%;
   margin-top: 0.9%;
+  
 }
 .menuButton{
 background-color: #FFEB84;
@@ -120,6 +126,7 @@ border: none;
 font-size: 23px;
 border-radius: 0 7px 7px 0;
 margin-top: 8%;
+cursor: pointer;
 }
 .dessertButton{
   background-color: #FFEB84;
@@ -129,6 +136,7 @@ border: none;
 font-size: 18px;
 border-radius: 10px;
 margin: 2%;
+cursor: pointer;
 }
 .vegTableButton{
   background-color: #FFEB84;
@@ -138,6 +146,7 @@ margin: 2%;
   font-size: 20px;
   border-radius: 10px;
   margin: 2%;
+  cursor: pointer;
 }
 .drinkButton{
   background-color: #FFEB84;
@@ -147,6 +156,7 @@ margin: 2%;
   font-size: 18px;
   border-radius: 10px;
   margin: 2%;
+  cursor: pointer;
 }
 .buttonOptions{
   width: 140px;
@@ -169,14 +179,15 @@ button:hover{
 }
 .kitchenCommandsArea{
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  width: 100vw;
+  flex-direction: row;
+  height: 90vh;
+  width: 95vw;
+  flex-wrap: wrap;
 }
 .command{
   width: 200px;
-  min-height: 100px;
-  background-color: yellow;
+  height: 200px;
+  background-color: rgb(244, 244, 91);
   margin: 15px;
   border-radius: 10px;
   padding: 10px;
