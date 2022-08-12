@@ -13,7 +13,6 @@ function Waiter () {
 const [productsLength, setProductsLength] = useState(0);
 
 const {orderItems, setOrderItems} = useContext(OrderContext)
-// console.log(orderItems)
 
 useEffect(() => {
     setProductsLength(
@@ -29,9 +28,10 @@ const total = orderItems.reduce(
     
     
     const handleClick = (newTable) => {
-        
-        localStorage.setItem('orderProducts', []);
+        console.log('si')
         setTableOpen(newTable)
+        setOrderItems([])
+        
     }
 
     const saveOrder = async (e) => {
@@ -41,7 +41,7 @@ const total = orderItems.reduce(
                 total: total,
                 estatus: 'pendiente'
               });
-            //   localStorage.setItem('orderProducts', []);
+         setOrderItems([])
         } catch (error) {
             console.error("Error adding document: ", e);
         } 
