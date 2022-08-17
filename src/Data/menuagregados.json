@@ -2,21 +2,21 @@
     {
         "id": "7",
         "name": "Extra de queso",
-        "price": "5$",
+        "price": 5,
         "img": "src/assets/img/extraqueso.jpg",
         "type": "agregados"
       },
       {
         "id": "8",
         "name": "Extra de albahaca",
-        "price": "7",
+        "price": 7,
         "img": "src/assets/img/extraalbahaca.jpg",
         "type": "agregados"
       },
       {
         "id": "9",
         "name": "Extra de rucula",
-        "price": "3",
+        "price": 3,
         "img": "src/assets/img/extrarucula.jpg",
         "type": "agregados"
       }
