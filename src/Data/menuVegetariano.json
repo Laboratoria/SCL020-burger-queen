@@ -1,0 +1,25 @@
+
+   [
+  {
+    "id": "1",
+    "name": "Ñoquis al pesto",
+    "price": 10,
+    "img": "src/assets/img/ñoquipesto.jpg",
+    "type": "menuvegetariano"
+  },
+  {
+    "id": "2",
+    "name": "Crema de zapallo",
+    "price": 14,
+    "img": "src/assets/img/cremazapallo.jpg",
+    "type": "menuvegetariano"
+  },
+  {
+    "id": "3",
+    "name": "Lasagna de verduras",
+    "price": 18,
+    "img": "src/assets/img/lasagnaverduras.jpg",
+    "type": "menuvegetariano"
+  }
+  
+]

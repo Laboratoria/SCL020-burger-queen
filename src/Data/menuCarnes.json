@@ -1,0 +1,23 @@
+[
+    {
+        "id": "4",
+        "name": "Lomo saltado",
+        "price": 15,
+        "img": "src/assets/img/chorillana.jpg",
+        "type": "menucarne"
+      },
+      {
+        "id": "5",
+        "name": "Asado Negro",
+        "price": 19,
+        "img": "src/assets/img/asadonegro.jpg",
+        "type": "menucarne"
+      },
+      {
+        "id": "6",
+        "name": "Chorrillana",
+        "price": 17,
+        "img": "src/assets/img/lomosaltado.jpg",
+        "type": "menucarne"
+      }
+]
